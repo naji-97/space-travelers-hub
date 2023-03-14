@@ -1,0 +1,38 @@
+.navbar {
+  border-bottom: 3px solid #e8e8e8;
+  display: flex;
+  background-color: #fff;
+  justify-content: space-between;
+
+  .head-icon {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 60px;
+  }
+
+  .link {
+    text-decoration: none;
+    margin-right: 10px;
+
+    &.active {
+      text-decoration: underline;
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    .horizontal-divider {
+      width: 0.5px;
+      height: 20px;
+      border: 1px solid black;
+    }
+  }
+}
