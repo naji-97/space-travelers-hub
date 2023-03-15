@@ -1,0 +1,37 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+
+  .profile-title {
+    margin-bottom: 1rem;
+  }
+
+  .profile-mission-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+
+    .profile-mission-list-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .profile-mission-list-title {
+        margin-bottom: 0.5rem;
+      }
+
+      .profile-mission-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .profile-mission-item {
+          margin-bottom: 0.5rem;
+        }
+      }
+    }
+  }
+}
