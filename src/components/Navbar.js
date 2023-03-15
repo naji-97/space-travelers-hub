@@ -1,11 +1,9 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import logo from '../img/logo.png';
 import '../style/style.scss';
 
 export default function Navbar() {
-  const location = useLocation();
-
   return (
     <div>
       <nav className="navbar">
@@ -22,18 +20,17 @@ export default function Navbar() {
           <h2>  Space Travelers Hub </h2>
         </div>
         <ul className="links">
-          <li className={`link ${location.pathname === '/Rockets' && 'active'}`}>
-            {' '}
-            <Link to="/Rockets">Rockets</Link>
-            {' '}
-          </li>
-          <li className={`link ${location.pathname === '/Missions' && 'active'}`}>
+          <li className="link">
             {' '}
             <Link to="/Missions">Missions</Link>
             {' '}
           </li>
-          <span className="horizontal-divider"> </span>
-          <li className={`link ${location.pathname === '/Profile' && 'active'}`}>
+          <li className="link">
+            {' '}
+            <Link to="/Space">SpaceShips</Link>
+            {' '}
+          </li>
+          <li className="link">
             {' '}
             <Link to="/Profile">My Profile</Link>
             {' '}
