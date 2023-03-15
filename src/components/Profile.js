@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addRockets } from '../redux/rockets/Rocket';
+import { getRocketData } from '../redux/rockets/rockets';
 
 const Rocket = () => {
   const dispatch = useDispatch();
@@ -17,7 +17,7 @@ const Rocket = () => {
             description: rocket.description,
             flickr_images: rocket.flickr_images,
           }));
-          dispatch(addRockets(selectedData));
+          dispatch(getRocketData(selectedData));
         });
     }
   }, [dispatch, rocketsData]);

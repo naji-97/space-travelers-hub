@@ -1,21 +1,21 @@
 import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Profile from './components/Profile';
-import Rockets from './components/Rockets';
 import Missions from './components/Missions';
+import RocketList from './components/Rockets';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './style/style.scss';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/"> </Route>
-        <Route path="/Rockets" element={<Rockets />}> </Route>
-        <Route path="/Missions" element={<Missions />}> </Route>
-        <Route path="/Profile" element={<Profile />}>  </Route>
+        <Route path="/" element={<RocketList />} />
+        <Route path="/Missions" element={<Missions />} />
+        <Route path="/Profile" element={<Profile />} />
       </Routes>
     </div>
   );
 }
-
 export default App;
