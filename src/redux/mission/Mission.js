@@ -23,7 +23,5 @@ export const missionsSlice = createSlice({
     },
   },
 });
-
 export const { addMissions, joinMission, leaveMission } = missionsSlice.actions;
-
 export default missionsSlice.reducer;
