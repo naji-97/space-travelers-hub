@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { Container } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { getRocketData } from '../redux/rockets/rockets';
@@ -21,6 +20,7 @@ const RocketList = () => {
           name={rocket.rocket_name}
           imgUrl={rocket.flickr_images[0]}
           description={rocket.description}
+          reserved={rocket.reserved}
         />
       ))}
     </Container>

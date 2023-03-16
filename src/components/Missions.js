@@ -6,7 +6,6 @@ import '../style/style.scss';
 const Missions = () => {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.missions);
-
   useEffect(() => {
     if (missions.length === 0) {
       fetch('https://api.spacexdata.com/v3/missions')
@@ -16,15 +15,12 @@ const Missions = () => {
         });
     }
   }, [dispatch, missions.length]);
-
   const handleJoinMission = (missionId) => {
     dispatch(joinMission(missionId));
   };
-
   const handleLeaveMission = (missionId) => {
     dispatch(leaveMission(missionId));
   };
-
   return (
     <div className="mission-container">
       <h2 className="mission-title">Missions</h2>
@@ -65,5 +61,4 @@ const Missions = () => {
     </div>
   );
 };
-
 export default Missions;

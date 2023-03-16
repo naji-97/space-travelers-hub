@@ -1,50 +1,44 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { getRocketData } from '../redux/rockets/rockets';
+import React from 'react';
+import {
+  Alert, Col, Container, ListGroup, Row,
+} from 'react-bootstrap';
+import { useSelector } from 'react-redux';
+import '../style/style.scss';
 
-const Rocket = () => {
-  const dispatch = useDispatch();
-  const rocketsData = useSelector((state) => state.rockets);
-
-  useEffect(() => {
-    if (rocketsData && rocketsData.length === 0) {
-      fetch('https://api.spacexdata.com/v3/rockets')
-        .then((res) => res.json())
-        .then((data) => {
-          const selectedData = data.map((rocket) => ({
-            id: rocket.id,
-            rocket_name: rocket.rocket_name,
-            description: rocket.description,
-            flickr_images: rocket.flickr_images,
-          }));
-          dispatch(getRocketData(selectedData));
-        });
-    }
-  }, [dispatch, rocketsData]);
-
+const Profile = () => {
+  const missions = useSelector((state) => state.missions);
+  const joinedMissions = missions.filter((mission) => mission.reserved);
+  const rockets = useSelector((state) => state.rockets.data);
+  const reservedRocktes = rockets.filter((r) => r.reserved);
   return (
-    <div>
-      <h1>HELLO ROCKETS</h1>
-      {rocketsData && rocketsData.length > 0
-        ? rocketsData.map((rocket) => (
-          <div key={rocket.id}>
-            <p>
-              Name:
-              {rocket.rocket_name}
-            </p>
-            <p>
-              Description:
-              {rocket.description}
-            </p>
-            <p>
-              Images:
-              {rocket.flickr_images.join(', ')}
-            </p>
-          </div>
-        ))
-        : <p>Loading...</p>}
-    </div>
+    <Container className="p-2">
+      <Row md={2}>
+        <Col>
+          <h3>My Missions</h3>
+          {joinedMissions.length ? null : (
+            <Alert>You haven&apos;t joined any missions yet.</Alert>
+          )}
+          <ListGroup>
+            {joinedMissions.map((m) => (
+              <ListGroup.Item key={m.mission_id}>
+                {m.mission_name}
+              </ListGroup.Item>
+            ))}
+          </ListGroup>
+        </Col>
+        <Col>
+          <h3>My Rockets</h3>
+          {reservedRocktes.length ? null : (
+            <Alert>You haven&apos;t reserved any rockets yet.</Alert>
+          )}
+          <ListGroup>
+            {reservedRocktes.map((r) => (
+              <ListGroup.Item key={r.id}>{r.rocket_name}</ListGroup.Item>
+            ))}
+          </ListGroup>
+        </Col>
+      </Row>
+    </Container>
   );
 };
-
-export default Rocket;
+export default Profile;
