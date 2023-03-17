@@ -24,9 +24,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 <a name="about-project"></a>
+# 📖 Space Traveller's Hub <a name="about-project"></a>
 
-> This is a react app that show your books progress with author name and title.
+**Space traveler's hub** is a single-page website where users can reserve rockets and join space missions.
 
 **Space travelers-hub** 
 
@@ -35,10 +35,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1] - You can reserve rocket or missions**
-- **[key_feature_2] - You can check or cancel reservation on my profile page**
+- **You can reserve rocket**
+- **You can joing missions**
+- **You can view reservation on my profile page**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -46,9 +45,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
- - [Live Demo Link]() 
+ - [https://space-travelers-hub-5oc5.onrender.com/]() 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -56,37 +53,20 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
-
 ### Setup
 Clone this repository to your desired folder:
 
 ```sh
-  git clone https://github.com/Itswali/BOOKSTORE.git
-  cd BOOKSTORE
-```
-
-Example commands:
-
-```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone https://github.com/naji-97/space-travelers-hub.git 
+  
 ```
-
 
 ### INSTALL
 
@@ -124,16 +104,10 @@ To to build for the production, execute the following command:
   npm run build
 ```
 
-### Deployment
-
-You can deploy this project using [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **TayyabKM**
 
@@ -154,10 +128,8 @@ You can deploy this project using [Github Pages](https://docs.github.com/en/page
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
+- [ ] **The Project is complete**
 
-- [ ] **add new missiles**
-- [ ] **Feature checking all the reserved rockets and missions **
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,28 +147,10 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
 If you like this project then give it a star ⭐️ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-<!-- FAQ (optional) -->
-<!--
-## ❓ FAQ (OPTIONAL) <a name="faq"></a> -->
-<!--
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **How to install all the packages used in the app**
-
-  - Just type the command npm install It will automatically install all the dependencies
-
-- **How to Open on browser**
-
-  - npm start coommand will do the trick for you.
-  -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,10 +160,5 @@ If you like this project then give it a star ⭐️
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<<<<<<< HEAD
-=======
-
->>>>>>> dev
