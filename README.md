@@ -45,7 +45,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
- - [https://space-travelers-hub-5oc5.onrender.com/]() 
+ https://space-travelers-hub-5oc5.onrender.com/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
