@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Missions component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="mission-container"
+  >
+    <div
+      class="titles"
+    >
+      <h2
+        class="border-container"
+      >
+        Mission
+      </h2>
+      <h2
+        class="border-container"
+      >
+        Description
+      </h2>
+      <h2
+        class="border-container"
+      >
+        Status
+      </h2>
+      <h2
+        class="border-container"
+      >
+         
+      </h2>
+    </div>
+    <ul
+      class="mission-list"
+    >
+      <li
+        class="mission-item"
+      >
+        <div
+          class="border-container"
+        >
+          <h3
+            class="mission-name"
+          >
+            Mars Mission
+          </h3>
+        </div>
+        <div
+          class="border-container"
+        >
+          <p
+            class="mission-description"
+          >
+            A mission to Mars
+          </p>
+        </div>
+        <div
+          class="border-container"
+        >
+          <div
+            class="mission-badge-container"
+          >
+            <div
+              class="not-a-member-badge"
+            >
+              NOT A MEMBER
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-container"
+        >
+          <div
+            class="mission-action-container"
+          >
+            <button
+              class="join-mission-button"
+              type="button"
+            >
+              Join Mission
+            </button>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
